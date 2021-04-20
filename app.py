@@ -67,6 +67,9 @@ def first():
 		bowler 			= request.form['bowler']
 
 		print(batsman,bowler,bat_team,bowl_team,venue)
+		if bat_team == bowl_team:
+			ans_string = "Batting and bowling team cannot be same"
+			return render_template('home.html',ans = [name_batsmen,name_bowlers,name_bat_team,name_bowl_team,name_venue,ans_string ])
 		batsmen_array[name_batsmen.index(batsman)]=1
 		bowler_array[name_bowlers.index(bowler)]=1
 		bat_team_array[name_bat_team.index(bat_team)]=1

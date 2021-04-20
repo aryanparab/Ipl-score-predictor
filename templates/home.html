@@ -18,6 +18,7 @@
         </script> -->
     </head>
     <body>
+        <h1>IPL score Predcitor</h1>
         <form method="POST">
             <label>Select Batting Team</label>
         <select id="bat_team" name = "bat_team" onchange="random_function()">
@@ -34,19 +35,19 @@
         </select>
         <br>
         <label>Enter Current Runs scored</label>
-        <input type = "text" id = "current_runs" name = "current_runs"/>
+        <input type = "text" id = "current_runs" name = "current_runs" placeholder="80" />
         <br>
         <label>Enter Current wickets lost </label>
-        <input type = "text" id = "current_wickets" name = "current_wickets"/>
+        <input type = "text" id = "current_wickets" name = "current_wickets" placeholder="2" />
         <br>
         <label>Enter Current over</label>
-        <input type = "text" id = "over" name = "over"/>
+        <input type = "text" id = "over" name = "over" placeholder="7.2" />
         <br>
         <label>Enter Runs scored in last five overs</label>
-        <input type = "text" id = "last_runs" name = "last_runs"/>
+        <input type = "text" id = "last_runs" name = "last_runs" placeholder="50" />
         <br>
         <label>Enter wickets lost in last five overs </label>
-        <input type = "text" id = "last_wickets" name = "last_wickets"/>
+        <input type = "text" id = "last_wickets" name = "last_wickets" placeholder="1" />
         <br>
         <label>Select Venue of match</label>
         <select id="venue" name = "venue" >
