@@ -87,4 +87,4 @@ def first():
 		return render_template('home.html',ans = [name_batsmen,name_bowlers,name_bat_team,name_bowl_team,name_venue,ans_string ])
 
 if __name__ == '__main__':
-	app.run(debug=True)
+	app.run(debug=False)
