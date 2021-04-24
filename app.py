@@ -64,6 +64,7 @@ def first():
 		last_wickets	= int(request.form['last_wickets'])
 		venue 			= request.form['venue']
 		batsman 		= request.form['batsman']
+		batsman_2 		= request.form['batsman_2']
 		bowler 			= request.form['bowler']
 
 		print(batsman,bowler,bat_team,bowl_team,venue)
